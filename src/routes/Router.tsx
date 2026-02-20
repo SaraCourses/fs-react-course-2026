@@ -8,6 +8,7 @@ import Layout from "../layouts/Layout"
 import AuthGuard from "../auth/AuthGuard"
 import { Role } from "../types/user.types"
 import GuestGuard from "../auth/GuestGuard"
+import AboutPage from "../pages/AboutPage"
 
 const Router = () => {
     const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const Router = () => {
                 {
                     path: Paths.home,
                     element: <HomePage />
+                },
+                {
+                    path: Paths.about,
+                    element: <AboutPage />
                 },
                 {
                     path: Paths.products,
